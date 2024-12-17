@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/ >
+    <title>Lista de Tareas de La Magus</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas de La Magus</h1>
+        
+        <div class="input-section">
+            <div class="new-task">
+                <input type="text" id="taskInput" placeholder="Escribe una nueva tarea..." />
+                <select id="priorityInput">
+                    <option value="alta">Alta</option>
+                    <option value="media" selected>Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+                <button class="add-btn" id="addBtn">Agregar</button>
+            </div>
+        </div>
+        
+        <ul id="todoList" class="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
